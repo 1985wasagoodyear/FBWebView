@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FBViewController.h
 //  FaceBlock
 //
 //  Created by K Y on 9/13/19.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
+
+@interface FBViewController : UIViewController
 
 
 @end
 
+NS_ASSUME_NONNULL_END

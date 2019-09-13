@@ -8,24 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		3FDBC85B232BC41E00733DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC85A232BC41E00733DC2 /* AppDelegate.m */; };
-		3FDBC85E232BC41E00733DC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC85D232BC41E00733DC2 /* ViewController.m */; };
-		3FDBC861232BC41E00733DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDBC85F232BC41E00733DC2 /* Main.storyboard */; };
+		3FDBC85E232BC41E00733DC2 /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC85D232BC41E00733DC2 /* FBViewController.m */; };
 		3FDBC863232BC41F00733DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDBC862232BC41F00733DC2 /* Assets.xcassets */; };
 		3FDBC866232BC41F00733DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDBC864232BC41F00733DC2 /* LaunchScreen.storyboard */; };
 		3FDBC869232BC41F00733DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC868232BC41F00733DC2 /* main.m */; };
+		3FDBC871232BC53700733DC2 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC870232BC53700733DC2 /* TabBarViewController.m */; };
+		3FDBC876232BC8E300733DC2 /* UIView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC875232BC8E300733DC2 /* UIView+Utility.m */; };
+		3FDBC879232BCBD900733DC2 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC878232BCBD900733DC2 /* OptionsViewController.m */; };
+		3FDBC87D232BDD9900733DC2 /* FBTrackerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC87C232BDD9900733DC2 /* FBTrackerURL.m */; };
+		3FDBC882232C147200733DC2 /* NavigationTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC881232C147200733DC2 /* NavigationTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FDBC856232BC41E00733DC2 /* FaceBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDBC859232BC41E00733DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FDBC85A232BC41E00733DC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3FDBC85C232BC41E00733DC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3FDBC85D232BC41E00733DC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3FDBC860232BC41E00733DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FDBC85C232BC41E00733DC2 /* FBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
+		3FDBC85D232BC41E00733DC2 /* FBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBViewController.m; sourceTree = "<group>"; };
 		3FDBC862232BC41F00733DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FDBC865232BC41F00733DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FDBC867232BC41F00733DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FDBC868232BC41F00733DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FDBC86F232BC53700733DC2 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		3FDBC870232BC53700733DC2 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		3FDBC874232BC8E300733DC2 /* UIView+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Utility.h"; sourceTree = "<group>"; };
+		3FDBC875232BC8E300733DC2 /* UIView+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utility.m"; sourceTree = "<group>"; };
+		3FDBC877232BCBD900733DC2 /* OptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		3FDBC878232BCBD900733DC2 /* OptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		3FDBC87A232BD8BF00733DC2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3FDBC87B232BDD9900733DC2 /* FBTrackerURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBTrackerURL.h; sourceTree = "<group>"; };
+		3FDBC87C232BDD9900733DC2 /* FBTrackerURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBTrackerURL.m; sourceTree = "<group>"; };
+		3FDBC880232C147200733DC2 /* NavigationTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTabBar.h; sourceTree = "<group>"; };
+		3FDBC881232C147200733DC2 /* NavigationTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +56,7 @@
 		3FDBC84D232BC41E00733DC2 = {
 			isa = PBXGroup;
 			children = (
+				3FDBC87A232BD8BF00733DC2 /* README.md */,
 				3FDBC858232BC41E00733DC2 /* FaceBlock */,
 				3FDBC857232BC41E00733DC2 /* Products */,
 			);
@@ -58,17 +73,50 @@
 		3FDBC858232BC41E00733DC2 /* FaceBlock */ = {
 			isa = PBXGroup;
 			children = (
+				3FDBC873232BC8B200733DC2 /* Utility */,
+				3FDBC872232BC8AB00733DC2 /* View */,
 				3FDBC859232BC41E00733DC2 /* AppDelegate.h */,
 				3FDBC85A232BC41E00733DC2 /* AppDelegate.m */,
-				3FDBC85C232BC41E00733DC2 /* ViewController.h */,
-				3FDBC85D232BC41E00733DC2 /* ViewController.m */,
-				3FDBC85F232BC41E00733DC2 /* Main.storyboard */,
 				3FDBC862232BC41F00733DC2 /* Assets.xcassets */,
 				3FDBC864232BC41F00733DC2 /* LaunchScreen.storyboard */,
 				3FDBC867232BC41F00733DC2 /* Info.plist */,
 				3FDBC868232BC41F00733DC2 /* main.m */,
 			);
 			path = FaceBlock;
+			sourceTree = "<group>";
+		};
+		3FDBC872232BC8AB00733DC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FDBC883232C147500733DC2 /* Subviews */,
+				3FDBC86F232BC53700733DC2 /* TabBarViewController.h */,
+				3FDBC870232BC53700733DC2 /* TabBarViewController.m */,
+				3FDBC85C232BC41E00733DC2 /* FBViewController.h */,
+				3FDBC85D232BC41E00733DC2 /* FBViewController.m */,
+				3FDBC877232BCBD900733DC2 /* OptionsViewController.h */,
+				3FDBC878232BCBD900733DC2 /* OptionsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FDBC873232BC8B200733DC2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3FDBC874232BC8E300733DC2 /* UIView+Utility.h */,
+				3FDBC875232BC8E300733DC2 /* UIView+Utility.m */,
+				3FDBC87B232BDD9900733DC2 /* FBTrackerURL.h */,
+				3FDBC87C232BDD9900733DC2 /* FBTrackerURL.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3FDBC883232C147500733DC2 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3FDBC880232C147200733DC2 /* NavigationTabBar.h */,
+				3FDBC881232C147200733DC2 /* NavigationTabBar.m */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +150,7 @@
 				TargetAttributes = {
 					3FDBC855232BC41E00733DC2 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,7 +179,6 @@
 			files = (
 				3FDBC866232BC41F00733DC2 /* LaunchScreen.storyboard in Resources */,
 				3FDBC863232BC41F00733DC2 /* Assets.xcassets in Resources */,
-				3FDBC861232BC41E00733DC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,23 +189,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDBC85E232BC41E00733DC2 /* ViewController.m in Sources */,
+				3FDBC871232BC53700733DC2 /* TabBarViewController.m in Sources */,
+				3FDBC882232C147200733DC2 /* NavigationTabBar.m in Sources */,
+				3FDBC85E232BC41E00733DC2 /* FBViewController.m in Sources */,
+				3FDBC87D232BDD9900733DC2 /* FBTrackerURL.m in Sources */,
+				3FDBC876232BC8E300733DC2 /* UIView+Utility.m in Sources */,
 				3FDBC869232BC41F00733DC2 /* main.m in Sources */,
 				3FDBC85B232BC41E00733DC2 /* AppDelegate.m in Sources */,
+				3FDBC879232BCBD900733DC2 /* OptionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3FDBC85F232BC41E00733DC2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FDBC860232BC41E00733DC2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3FDBC864232BC41F00733DC2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FaceBlock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +339,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ky.FaceBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FaceBlock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +358,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ky.FaceBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
