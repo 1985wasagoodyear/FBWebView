@@ -31,10 +31,12 @@ NSString *const FB_REDIRECT_PREFIX = @"https://lm.facebook.com/l.php?u=";
     if (self) {
         NSArray *comps = [[url absoluteString] componentsSeparatedByString:FB_ID_TRACKER];
         if (comps.count > 1) {
+            NSLog(@"Tracker found for URL: %@", url.absoluteString);
             _hasTracker = YES;
             comps = [comps.firstObject componentsSeparatedByString:FB_REDIRECT_PREFIX];
             NSString *urlString = [comps.lastObject stringByRemovingPercentEncoding];
             _cleanRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+            NSLog(@"New cleaned URL: %@", urlString);
         }
     }
     return self;

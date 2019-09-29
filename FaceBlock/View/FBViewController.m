@@ -10,15 +10,17 @@
 #import <WebKit/WebKit.h>
 #import "UIView+Utility.h"
 #import "FBTrackerURL.h"
+#import "NavigationTabBar.h"
+#import "OptionsViewController.h"
 
 NSString *const BASE_URL = @"https://mbasic.facebook.com";
 NSTimeInterval const TIMEOUT_INTERVAL = 180.0;
 
-@interface FBViewController () <WKNavigationDelegate, UIScrollViewDelegate, WKUIDelegate>
+@interface FBViewController () <WKNavigationDelegate, UIScrollViewDelegate, WKUIDelegate, NavigationTabBarDelegate>
 
 @property (nonatomic, strong) WKWebView *webView;
-@property (nonatomic, strong) UIBarButtonItem *backButton;
-@property (nonatomic, strong) UIBarButtonItem *forwardButton;
+@property (nonatomic, strong) NavigationTabBar *navTabBar;
+@property (nonatomic, strong) UITextField *addressField;
 
 @end
 
@@ -34,20 +36,32 @@ NSTimeInterval const TIMEOUT_INTERVAL = 180.0;
     [super loadView];
     UIView *view = self.view;
     [view setBackgroundColor:UIColor.whiteColor];
-    self.navigationController.hidesBarsOnSwipe = YES;
-    _backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind
-                                                                target:self
-                                                                action:@selector(backButtonAction)];
-    _forwardButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward
-                                                                  target:self
-                                                                  action:@selector(forwardButtonAction)];
-    [self.navigationItem setLeftBarButtonItems:@[_backButton, _forwardButton]];
+    // build webview
     WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
     _webView = [[WKWebView alloc] initWithFrame:view.frame configuration:config];
     _webView.UIDelegate = self;
     _webView.navigationDelegate = self;
     _webView.scrollView.delegate = self;
-    [view addFillingSubview:_webView];
+    _webView.translatesAutoresizingMaskIntoConstraints = NO;
+    [view addSubview:_webView];
+    
+    // build navigation bar
+    _navTabBar = [[NavigationTabBar alloc] init];
+    _navTabBar.translatesAutoresizingMaskIntoConstraints = NO;
+    _navTabBar.navDelegate = self;
+    [view addSubview:_navTabBar];
+    
+    // all subview constraints
+    NSArray *constraints = @[
+                             [_webView.topAnchor constraintEqualToAnchor:view.layoutMarginsGuide.topAnchor],
+                             [_webView.leadingAnchor constraintEqualToAnchor:view.leadingAnchor],
+                             [_webView.trailingAnchor constraintEqualToAnchor:view.trailingAnchor],
+                             [_navTabBar.topAnchor constraintEqualToAnchor:_webView.bottomAnchor],
+                             [_navTabBar.leadingAnchor constraintEqualToAnchor:view.leadingAnchor],
+                             [_navTabBar.trailingAnchor constraintEqualToAnchor:view.trailingAnchor],
+                             [_navTabBar.bottomAnchor constraintEqualToAnchor:view.bottomAnchor],
+                            ];
+    [NSLayoutConstraint activateConstraints: constraints];
 }
 
 - (void)viewDidLoad {
@@ -58,7 +72,7 @@ NSTimeInterval const TIMEOUT_INTERVAL = 180.0;
     [_webView loadRequest:request];
 }
 
-#pragma mark - Custom Action Methods
+#pragma mark - NavigationTabBar Delegate Methods
 
 - (void)backButtonAction {
     [_webView goBack];
@@ -66,6 +80,17 @@ NSTimeInterval const TIMEOUT_INTERVAL = 180.0;
 
 - (void)forwardButtonAction {
     [_webView goForward];
+}
+
+- (void)otherButtonAction {
+    
+}
+
+- (void)optionsButtonAction {
+    OptionsViewController *optionsVC = [[OptionsViewController alloc] init];
+    [self presentViewController:optionsVC
+                       animated:YES
+                     completion:nil];
 }
 
 #pragma mark - WKNavigationDelegate
@@ -88,6 +113,7 @@ NSTimeInterval const TIMEOUT_INTERVAL = 180.0;
     }
     return nil;
 }
+
 #pragma mark - UIScrollViewDelegate
 
 @end

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FBViewController.h"
+#import "TabBarViewController.h"
 
 @interface AppDelegate ()
 

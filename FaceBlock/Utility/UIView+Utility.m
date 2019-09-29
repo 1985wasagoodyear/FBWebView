@@ -20,7 +20,7 @@
     NSArray *constraints = @[
                              [view.leadingAnchor constraintEqualToAnchor:self.leadingAnchor
                                                                 constant:padding],
-                             [view.topAnchor constraintEqualToAnchor:self.topAnchor
+                             [view.topAnchor constraintEqualToAnchor:self.layoutMarginsGuide.topAnchor
                                                             constant:padding],
                              [self.bottomAnchor constraintEqualToAnchor:view.bottomAnchor
                                                                constant:padding],

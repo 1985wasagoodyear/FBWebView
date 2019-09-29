@@ -10,7 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol NavigationTabBarDelegate <NSObject>
+
+- (void)backButtonAction;
+- (void)forwardButtonAction;
+- (void)otherButtonAction;
+- (void)optionsButtonAction;
+
+@end
+
 @interface NavigationTabBar : UITabBar
+
+@property (nullable, nonatomic, weak) id<NavigationTabBarDelegate> navDelegate;
 
 @end
 
